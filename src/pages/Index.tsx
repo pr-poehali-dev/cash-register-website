@@ -77,7 +77,7 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-heading font-bold text-primary flex items-center gap-2">
             <Icon name="ShoppingCart" size={28} />
-            КассаТех
+            Мастер-Касс
           </h1>
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
@@ -100,7 +100,7 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h2 className="text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight">
-                Кассовые решения для вашего бизнеса
+                Кассовые решения для малого бизнеса
               </h2>
               <p className="text-xl text-muted-foreground mb-8">
                 Продажа, настройка и обслуживание контрольно-кассовой техники. Работаем быстро, надежно, профессионально.
@@ -319,7 +319,7 @@ export default function Index() {
             <div>
               <h3 className="font-heading font-bold text-xl mb-4 flex items-center gap-2">
                 <Icon name="ShoppingCart" size={24} />
-                КассаТех
+                Мастер-Касс
               </h3>
               <p className="text-sm opacity-80">
                 Профессиональные решения для вашего бизнеса
@@ -354,7 +354,7 @@ export default function Index() {
             </div>
           </div>
           <div className="border-t border-secondary-foreground/20 pt-8 text-center text-sm opacity-80">
-            <p>© 2024 КассаТех. Все права защищены.</p>
+            <p>© 2024 Мастер-Касс. Все права защищены.</p>
           </div>
         </div>
       </footer>
