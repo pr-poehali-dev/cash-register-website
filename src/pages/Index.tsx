@@ -85,10 +85,12 @@ export default function Index() {
             <a href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
             <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button className="hidden md:flex" size="sm">
-            <Icon name="Phone" size={16} className="mr-2" />
-            Позвонить
-          </Button>
+          <a href="tel:+79801421010">
+            <Button className="hidden md:flex" size="sm">
+              <Icon name="Phone" size={16} className="mr-2" />
+              +7 (980) 142-10-10
+            </Button>
+          </a>
         </div>
       </header>
 
@@ -108,10 +110,12 @@ export default function Index() {
                   <Icon name="FileText" size={20} className="mr-2" />
                   Оставить заявку
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8">
-                  <Icon name="Phone" size={20} className="mr-2" />
-                  +7 (495) 123-45-67
-                </Button>
+                <a href="tel:+79801421010">
+                  <Button size="lg" variant="outline" className="text-lg px-8">
+                    <Icon name="Phone" size={20} className="mr-2" />
+                    +7 (980) 142-10-10
+                  </Button>
+                </a>
               </div>
               <div className="mt-12 grid grid-cols-3 gap-6">
                 <div>
@@ -277,7 +281,7 @@ export default function Index() {
                 <CardTitle className="font-heading">Телефон</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold mb-2">+7 (495) 123-45-67</p>
+                <a href="tel:+79801421010" className="text-lg font-semibold mb-2 hover:text-primary transition-colors block">+7 (980) 142-10-10</a>
                 <p className="text-sm text-muted-foreground">Круглосуточно</p>
               </CardContent>
             </Card>
