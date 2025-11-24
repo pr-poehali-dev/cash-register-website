@@ -116,9 +116,11 @@ export default function Index() {
                   Оставить заявку
                 </Button>
                 <a href="tel:+79801421010">
-                  <Button size="lg" variant="outline" className="text-2xl px-12 py-8">+7 (980) 142-10-10
-+7 (916) 412-09-20
-+7 (916) 412-09-40</Button>
+                  <Button size="lg" variant="outline" className="text-2xl px-12 py-8 flex flex-col items-center gap-2">
+                    <span>+7 (980) 142-10-10</span>
+                    <span>+7 (916) 412-09-20</span>
+                    <span>+7 (916) 412-09-40</span>
+                  </Button>
                 </a>
               </div>
               <div className="mt-12 grid grid-cols-3 gap-6">
