@@ -298,7 +298,7 @@ export default function Index() {
                 <CardTitle className="font-heading">Телефон</CardTitle>
               </CardHeader>
               <CardContent>
-                <a href="tel:+79801421010" className="text-lg font-semibold mb-2 hover:text-primary transition-colors block">+7 (980) 142-10-10</a>
+                <a href="tel:+79801421010" className="font-semibold mb-2 hover:text-primary transition-colors block text-3xl">+7 (980) 142-10-10</a>
                 <p className="text-sm text-muted-foreground">Круглосуточно</p>
               </CardContent>
             </Card>
