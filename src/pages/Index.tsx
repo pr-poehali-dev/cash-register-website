@@ -134,11 +134,28 @@ export default function Index() {
             </div>
             <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="aspect-square bg-gradient-to-br from-primary to-accent rounded-3xl opacity-20 absolute -top-8 -right-8 w-3/4 blur-3xl" />
-              <img 
-                src="https://cdn.poehali.dev/files/3cc8c07a-e4f7-4b43-8c72-8514a6a7f2aa.png" 
-                alt="Кассовое оборудование АТОЛ" 
-                className="relative z-10 rounded-2xl shadow-2xl w-full"
-              />
+              <div className="relative z-10 grid grid-cols-2 gap-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/8e263679-67f2-4838-b01f-29692fba2b4d.png" 
+                  alt="Касса АТОЛ с цветным экраном" 
+                  className="rounded-2xl shadow-2xl w-full"
+                />
+                <img 
+                  src="https://cdn.poehali.dev/files/3f2ac707-deef-41e5-85f0-48be85ee4893.png" 
+                  alt="Фискальный регистратор" 
+                  className="rounded-2xl shadow-2xl w-full"
+                />
+                <img 
+                  src="https://cdn.poehali.dev/files/19578416-2487-4fc8-a3e8-c3a4dda5d122.png" 
+                  alt="Принтер чеков АТОЛ" 
+                  className="rounded-2xl shadow-2xl w-full"
+                />
+                <img 
+                  src="https://cdn.poehali.dev/files/3cc8c07a-e4f7-4b43-8c72-8514a6a7f2aa.png" 
+                  alt="Смарт-терминал АТОЛ" 
+                  className="rounded-2xl shadow-2xl w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
