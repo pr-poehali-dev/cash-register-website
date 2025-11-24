@@ -94,7 +94,7 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-20 px-4 relative overflow-hidden">
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-neutral-500">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5 -z-10" />
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -144,7 +144,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="services" className="py-20 px-4 bg-muted/30">
+      <section id="services" className="py-20 px-4 bg-neutral-500">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Наши услуги</h2>
