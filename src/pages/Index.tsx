@@ -72,8 +72,8 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
+    <div className="min-h-screen bg-neutral-500">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-neutral-500/80 backdrop-blur-md border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-heading font-bold text-primary flex items-center gap-2">
             <Icon name="ShoppingCart" size={28} />
