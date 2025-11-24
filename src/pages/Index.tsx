@@ -105,14 +105,14 @@ export default function Index() {
               <p className="text-xl text-muted-foreground mb-8">
                 Продажа, настройка и обслуживание контрольно-кассовой техники. Работаем быстро, надежно, профессионально.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="text-lg px-8">
-                  <Icon name="FileText" size={20} className="mr-2" />
+              <div className="flex flex-wrap gap-6">
+                <Button size="lg" className="text-2xl px-12 py-8">
+                  <Icon name="FileText" size={30} className="mr-3" />
                   Оставить заявку
                 </Button>
                 <a href="tel:+79801421010">
-                  <Button size="lg" variant="outline" className="text-lg px-8">
-                    <Icon name="Phone" size={20} className="mr-2" />
+                  <Button size="lg" variant="outline" className="text-2xl px-12 py-8">
+                    <Icon name="Phone" size={30} className="mr-3" />
                     +7 (980) 142-10-10
                   </Button>
                 </a>
