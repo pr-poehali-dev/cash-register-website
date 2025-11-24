@@ -310,7 +310,7 @@ export default function Index() {
                 <CardTitle className="font-heading">Email</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold mb-2">Master-kass@list.ru</p>
+                <p className="font-semibold mb-2 text-2xl">Master-kass@list.ru</p>
                 <p className="text-sm text-muted-foreground">Ответим в течение часа</p>
               </CardContent>
             </Card>
