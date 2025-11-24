@@ -86,8 +86,8 @@ export default function Index() {
             <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
           </nav>
           <a href="tel:+79801421010">
-            <Button className="hidden md:flex" size="sm">
-              <Icon name="Phone" size={16} className="mr-2" />
+            <Button className="hidden md:flex text-lg px-6 py-6" size="lg">
+              <Icon name="Phone" size={24} className="mr-3" />
               +7 (980) 142-10-10
             </Button>
           </a>
