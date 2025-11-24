@@ -334,15 +334,7 @@ export default function Index() {
                 <li>Поддержка</li>
               </ul>
             </div>
-            <div>
-              <h4 className="font-heading font-semibold mb-4">Компания</h4>
-              <ul className="space-y-2 text-sm opacity-80">
-                <li>О нас</li>
-                <li>Контакты</li>
-                <li>Вакансии</li>
-                <li>Партнерам</li>
-              </ul>
-            </div>
+
             <div>
               <h4 className="font-heading font-semibold mb-4">Поддержка</h4>
               <ul className="space-y-2 text-sm opacity-80">
