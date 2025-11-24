@@ -124,15 +124,15 @@ export default function Index() {
               <div className="mt-12 grid grid-cols-3 gap-6">
                 <div>
                   <div className="text-4xl font-heading font-bold text-primary">500+</div>
-                  <div className="text-sm text-muted-foreground mt-1">Клиентов</div>
+                  <div className="text-sm text-foreground mt-1">Клиентов</div>
                 </div>
                 <div>
                   <div className="text-4xl font-heading font-bold text-primary">24/7</div>
-                  <div className="text-sm text-muted-foreground mt-1">Поддержка</div>
+                  <div className="text-sm text-foreground mt-1">Поддержка</div>
                 </div>
                 <div>
                   <div className="text-4xl font-heading font-bold text-primary">5 лет</div>
-                  <div className="text-sm text-muted-foreground mt-1">На рынке</div>
+                  <div className="text-sm text-foreground mt-1">На рынке</div>
                 </div>
               </div>
             </div>
