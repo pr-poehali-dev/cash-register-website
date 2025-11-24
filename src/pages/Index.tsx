@@ -327,7 +327,7 @@ export default function Index() {
                 <CardTitle className="font-heading">Адрес</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold mb-2">г. Подольск</p>
+                <p className="font-semibold mb-2 text-3xl">г. Подольск</p>
                 <p className="text-sm text-muted-foreground">ул. Маштакова, д. 12
 3 этаж, офис 17 </p>
               </CardContent>
