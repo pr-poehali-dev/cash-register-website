@@ -135,7 +135,7 @@ export default function Index() {
             <div className="relative animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="aspect-square bg-gradient-to-br from-primary to-accent rounded-3xl opacity-20 absolute -top-8 -right-8 w-3/4 blur-3xl" />
               <img 
-                src="https://cdn.poehali.dev/files/0e6c72ba-2355-4f3a-9438-971788cc1be4.png" 
+                src="https://cdn.poehali.dev/files/3cc8c07a-e4f7-4b43-8c72-8514a6a7f2aa.png" 
                 alt="Кассовое оборудование АТОЛ" 
                 className="relative z-10 rounded-2xl shadow-2xl w-full"
               />
