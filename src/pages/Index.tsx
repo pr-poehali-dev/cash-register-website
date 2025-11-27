@@ -108,7 +108,7 @@ export default function Index() {
               <h2 className="text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight">
                 Кассовые решения для малого бизнеса
               </h2>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl mb-8 text-[#000000]">
                 Продажа, настройка и обслуживание контрольно-кассовой техники. Работаем быстро, надежно, профессионально.
               </p>
               <div className="flex flex-wrap gap-6">
