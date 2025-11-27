@@ -158,7 +158,7 @@ export default function Index() {
                   className="w-full object-contain"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/files/c5d51e6d-461a-4497-b612-5567ea0a41d6.jpg" 
+                  src="https://cdn.poehali.dev/files/329e4f5a-8713-4412-9de9-9b1a9530b97d.png" 
                   alt="Смарт-терминал Эвотор" 
                   className="w-full object-contain"
                 />
