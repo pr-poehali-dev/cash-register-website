@@ -146,7 +146,10 @@ export default function Index() {
                   src="https://cdn.poehali.dev/files/7f8b8509-6787-47ca-aa59-c702440d36b2.png" 
                   alt="Смарт-терминал с сенсорным экраном" 
                   className="rounded-2xl shadow-2xl w-full"
-                  style={{ mixBlendMode: 'screen' }}
+                  style={{ 
+                    filter: 'brightness(1.2) contrast(1.1)',
+                    backgroundColor: 'transparent'
+                  }}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/3f2ac707-deef-41e5-85f0-48be85ee4893.png" 
