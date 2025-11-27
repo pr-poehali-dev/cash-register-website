@@ -155,7 +155,7 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/files/25e19b69-ddb1-4a72-9206-909342fd87ef.png" 
                   alt="Фискальный регистратор АТОЛ" 
-                  className="rounded-2xl shadow-2xl w-full"
+                  className="rounded-2xl shadow-2xl w-full object-contain"
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/3cc8c07a-e4f7-4b43-8c72-8514a6a7f2aa.png" 
