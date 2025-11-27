@@ -143,13 +143,9 @@ export default function Index() {
               <div className="aspect-square bg-gradient-to-br from-primary to-accent rounded-3xl opacity-20 absolute -top-8 -right-8 w-3/4 blur-3xl" />
               <div className="relative z-10 grid grid-cols-2 gap-4">
                 <img 
-                  src="https://cdn.poehali.dev/files/7f8b8509-6787-47ca-aa59-c702440d36b2.png" 
+                  src="https://cdn.poehali.dev/projects/d563f418-4a82-47d3-a0b4-7d68235902f5/files/1f5bd000-6b09-4c41-b3dc-909445d7d6f8.jpg" 
                   alt="Смарт-терминал с сенсорным экраном" 
                   className="rounded-2xl shadow-2xl w-full"
-                  style={{ 
-                    filter: 'brightness(1.2) contrast(1.1)',
-                    backgroundColor: 'transparent'
-                  }}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/3f2ac707-deef-41e5-85f0-48be85ee4893.png" 
