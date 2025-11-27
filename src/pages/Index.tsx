@@ -158,9 +158,9 @@ export default function Index() {
                   className="w-full object-contain"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/files/3cc8c07a-e4f7-4b43-8c72-8514a6a7f2aa.png" 
-                  alt="Смарт-терминал АТОЛ" 
-                  className="rounded-2xl shadow-2xl w-full"
+                  src="https://cdn.poehali.dev/files/c5d51e6d-461a-4497-b612-5567ea0a41d6.jpg" 
+                  alt="Смарт-терминал Эвотор" 
+                  className="w-full object-contain"
                 />
               </div>
             </div>
