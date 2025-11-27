@@ -9,6 +9,7 @@ import Icon from '@/components/ui/icon';
 
 export default function Index() {
   const { toast } = useToast();
+  const [showServicesMenu, setShowServicesMenu] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -84,8 +85,37 @@ export default function Index() {
             <Icon name="ShoppingCart" size={20} className="md:w-7 md:h-7" />
             Мастер-Касс
           </h1>
-          <nav className="hidden md:flex gap-6">
-            <a href="#services" className="text-foreground hover:text-primary transition-colors">Услуги</a>
+          <nav className="hidden md:flex gap-6 items-center">
+            <div 
+              className="relative"
+              onMouseEnter={() => setShowServicesMenu(true)}
+              onMouseLeave={() => setShowServicesMenu(false)}
+            >
+              <a href="#services" className="text-foreground hover:text-primary transition-colors flex items-center gap-1">
+                Услуги
+                <Icon name="ChevronDown" size={16} />
+              </a>
+              {showServicesMenu && (
+                <div className="absolute top-full left-0 mt-2 w-72 bg-background border rounded-lg shadow-lg p-4 space-y-3">
+                  <a href="#services" className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Продажа кассовых аппаратов</div>
+                    <div className="text-sm text-muted-foreground">Широкий ассортимент ККТ</div>
+                  </a>
+                  <a href="#services" className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Техническое обслуживание</div>
+                    <div className="text-sm text-muted-foreground">Ремонт и обслуживание</div>
+                  </a>
+                  <a href="#services" className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Настройка и интеграция</div>
+                    <div className="text-sm text-muted-foreground">Установка и интеграция с 1С</div>
+                  </a>
+                  <a href="#services" className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Круглосуточная поддержка</div>
+                    <div className="text-sm text-muted-foreground">Техподдержка 24/7</div>
+                  </a>
+                </div>
+              )}
+            </div>
             <a href="#request" className="text-foreground hover:text-primary transition-colors">Заявка</a>
             <a href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
             <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
