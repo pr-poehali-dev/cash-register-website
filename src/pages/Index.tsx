@@ -80,8 +80,8 @@ export default function Index() {
       <div className="fixed inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/6a367fa8-b448-4057-8ed0-4d2614046ae3.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
       <header className="fixed top-0 left-0 right-0 z-50 bg-neutral-500/80 backdrop-blur-md border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="font-heading font-bold text-primary flex items-center gap-2 text-6xl">
-            <Icon name="ShoppingCart" size={28} />
+          <h1 className="font-heading font-bold text-primary flex items-center gap-2 text-3xl md:text-6xl">
+            <Icon name="ShoppingCart" size={20} className="md:w-7 md:h-7" />
             Мастер-Касс
           </h1>
           <nav className="hidden md:flex gap-6">
@@ -105,37 +105,37 @@ export default function Index() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight">
+              <h2 className="text-3xl md:text-6xl font-heading font-bold mb-6 leading-tight">
                 Кассовые решения для малого бизнеса
               </h2>
-              <p className="text-xl mb-8 text-[#000000]">
+              <p className="text-base md:text-xl mb-8 text-[#000000]">
                 Продажа, настройка и обслуживание контрольно-кассовой техники. Работаем быстро, надежно, профессионально.
               </p>
-              <div className="flex flex-wrap gap-6">
-                <Button size="lg" className="text-2xl px-12 py-8">
-                  <Icon name="FileText" size={30} className="mr-3" />
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+                <Button size="lg" className="text-lg md:text-2xl px-8 md:px-12 py-6 md:py-8 w-full sm:w-auto">
+                  <Icon name="FileText" size={24} className="mr-2 md:mr-3" />
                   Оставить заявку
                 </Button>
-                <a href="tel:+79801421010">
-                  <Button size="lg" variant="outline" className="text-xl px-20 py-14 flex flex-col items-center gap-3 w-auto whitespace-nowrap">
+                <a href="tel:+79801421010" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="text-base md:text-xl px-8 md:px-20 py-8 md:py-14 flex flex-col items-center gap-2 md:gap-3 w-full whitespace-nowrap">
                     <span>+7 (980) 142-10-10</span>
                     <span>+7 (916) 412-09-20</span>
                     <span>+7 (916) 412-09-40</span>
                   </Button>
                 </a>
               </div>
-              <div className="mt-12 grid grid-cols-3 gap-6">
+              <div className="mt-12 grid grid-cols-3 gap-3 md:gap-6">
                 <div>
-                  <div className="text-4xl font-heading font-bold text-primary">500+</div>
-                  <div className="text-sm text-foreground mt-1">Клиентов</div>
+                  <div className="text-2xl md:text-4xl font-heading font-bold text-primary">500+</div>
+                  <div className="text-xs md:text-sm text-foreground mt-1">Клиентов</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-heading font-bold text-primary">24/7</div>
-                  <div className="text-sm text-foreground mt-1">Поддержка</div>
+                  <div className="text-2xl md:text-4xl font-heading font-bold text-primary">24/7</div>
+                  <div className="text-xs md:text-sm text-foreground mt-1">Поддержка</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-heading font-bold text-primary">5 лет</div>
-                  <div className="text-sm text-foreground mt-1">На рынке</div>
+                  <div className="text-2xl md:text-4xl font-heading font-bold text-primary">5 лет</div>
+                  <div className="text-xs md:text-sm text-foreground mt-1">На рынке</div>
                 </div>
               </div>
             </div>
@@ -171,10 +171,10 @@ export default function Index() {
       <section id="services" className="py-20 px-4 bg-neutral-500">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Наши услуги</h2>
-            <p className="text-xl text-muted-foreground">Комплексные решения для вашего бизнеса</p>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">Наши услуги</h2>
+            <p className="text-base md:text-xl text-muted-foreground">Комплексные решения для вашего бизнеса</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card 
                 key={index} 
@@ -199,8 +199,8 @@ export default function Index() {
       <section id="request" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Вызвать специалиста</h2>
-            <p className="text-xl text-muted-foreground">Заполните форму и мы свяжемся с вами в течение 15 минут</p>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">Вызвать специалиста</h2>
+            <p className="text-base md:text-xl text-muted-foreground">Заполните форму и мы свяжемся с вами в течение 15 минут</p>
           </div>
           <Card className="border-2 shadow-xl">
             <CardContent className="pt-6">
@@ -272,8 +272,8 @@ export default function Index() {
       <section id="faq" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Частые вопросы</h2>
-            <p className="text-xl text-muted-foreground">Ответы на популярные вопросы о наших услугах</p>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">Частые вопросы</h2>
+            <p className="text-base md:text-xl text-muted-foreground">Ответы на популярные вопросы о наших услугах</p>
           </div>
           <Accordion type="single" collapsible className="space-y-4">
             {faqItems.map((item, index) => (
@@ -293,10 +293,10 @@ export default function Index() {
       <section id="contacts" className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">Контакты и поддержка</h2>
-            <p className="text-xl text-muted-foreground">Мы всегда на связи</p>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">Контакты и поддержка</h2>
+            <p className="text-base md:text-xl text-muted-foreground">Мы всегда на связи</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center border-2 hover:border-primary transition-colors">
               <CardHeader>
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
