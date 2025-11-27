@@ -153,8 +153,8 @@ export default function Index() {
                   className="rounded-2xl shadow-2xl w-full"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/files/19578416-2487-4fc8-a3e8-c3a4dda5d122.png" 
-                  alt="Принтер чеков АТОЛ" 
+                  src="https://cdn.poehali.dev/files/25e19b69-ddb1-4a72-9206-909342fd87ef.png" 
+                  alt="Фискальный регистратор АТОЛ" 
                   className="rounded-2xl shadow-2xl w-full"
                 />
                 <img 
