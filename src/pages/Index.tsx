@@ -145,7 +145,7 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/files/8e263679-67f2-4838-b01f-29692fba2b4d.png" 
                   alt="Касса АТОЛ с цветным экраном" 
-                  className="rounded-2xl shadow-2xl w-full"
+                  className="rounded-2xl shadow-2xl w-full mix-blend-multiply"
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/3f2ac707-deef-41e5-85f0-48be85ee4893.png" 
