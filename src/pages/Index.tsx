@@ -145,22 +145,22 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/projects/d563f418-4a82-47d3-a0b4-7d68235902f5/files/1f5bd000-6b09-4c41-b3dc-909445d7d6f8.jpg" 
                   alt="Смарт-терминал с сенсорным экраном" 
-                  className="rounded-2xl shadow-2xl w-full"
+                  className="w-full object-contain mix-blend-multiply"
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/3f2ac707-deef-41e5-85f0-48be85ee4893.png" 
                   alt="Фискальный регистратор" 
-                  className="rounded-2xl shadow-2xl w-full"
+                  className="w-full object-contain mix-blend-multiply"
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/25e19b69-ddb1-4a72-9206-909342fd87ef.png" 
                   alt="Фискальный регистратор АТОЛ" 
-                  className="w-full object-contain"
+                  className="w-full object-contain mix-blend-multiply"
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/329e4f5a-8713-4412-9de9-9b1a9530b97d.png" 
                   alt="Смарт-терминал Эвотор" 
-                  className="w-full object-contain"
+                  className="w-full object-contain mix-blend-multiply"
                 />
               </div>
             </div>
