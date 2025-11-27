@@ -99,7 +99,7 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-neutral-500">
+      <section className="pt-32 pb-20 px-4 relative overflow-hidden bg-transparent">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5 -z-10" />
         <div className="absolute inset-0 opacity-5 -z-10" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/caf80cde-e21f-4dec-a81b-94d54eb46ccf.png)', backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
         <div className="container mx-auto max-w-6xl">
