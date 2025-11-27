@@ -76,7 +76,8 @@ export default function Index() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-500">
+    <div className="min-h-screen bg-neutral-500 relative">
+      <div className="fixed inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/6a367fa8-b448-4057-8ed0-4d2614046ae3.png)', backgroundSize: '40%', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
       <header className="fixed top-0 left-0 right-0 z-50 bg-neutral-500/80 backdrop-blur-md border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="font-heading font-bold text-primary flex items-center gap-2 text-6xl">
