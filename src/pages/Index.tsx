@@ -143,8 +143,8 @@ export default function Index() {
               <div className="aspect-square bg-gradient-to-br from-primary to-accent rounded-3xl opacity-20 absolute -top-8 -right-8 w-3/4 blur-3xl" />
               <div className="relative z-10 grid grid-cols-2 gap-4">
                 <img 
-                  src="https://cdn.poehali.dev/files/8e263679-67f2-4838-b01f-29692fba2b4d.png" 
-                  alt="Касса АТОЛ с цветным экраном" 
+                  src="https://cdn.poehali.dev/files/7f8b8509-6787-47ca-aa59-c702440d36b2.png" 
+                  alt="Смарт-терминал с сенсорным экраном" 
                   className="rounded-2xl shadow-2xl w-full mix-blend-multiply"
                 />
                 <img 
