@@ -145,7 +145,8 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/files/7f8b8509-6787-47ca-aa59-c702440d36b2.png" 
                   alt="Смарт-терминал с сенсорным экраном" 
-                  className="rounded-2xl shadow-2xl w-full mix-blend-multiply"
+                  className="rounded-2xl shadow-2xl w-full"
+                  style={{ mixBlendMode: 'screen' }}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/3f2ac707-deef-41e5-85f0-48be85ee4893.png" 
