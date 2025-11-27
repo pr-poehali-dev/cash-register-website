@@ -158,9 +158,9 @@ export default function Index() {
                   className="w-full object-contain mix-blend-multiply"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/files/329e4f5a-8713-4412-9de9-9b1a9530b97d.png" 
+                  src="https://cdn.poehali.dev/files/cc290bb9-2278-4961-908a-f32d969a94a9.png" 
                   alt="Смарт-терминал Эвотор" 
-                  className="w-full object-contain mix-blend-multiply"
+                  className="w-full object-contain"
                 />
               </div>
             </div>
