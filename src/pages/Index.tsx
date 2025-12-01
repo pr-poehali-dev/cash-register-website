@@ -43,35 +43,35 @@ export default function Index() {
         <RequestForm />
         <FAQSection />
 
-        <section id="contacts" className="py-24 relative z-10 bg-card/50 backdrop-blur">
+        <section id="contacts" className="py-36 relative z-10 bg-card/50 backdrop-blur">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="font-heading font-bold text-4xl md:text-6xl mb-8">Контакты</h2>
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="max-w-6xl mx-auto text-center">
+              <h2 className="font-heading font-bold text-6xl md:text-9xl mb-12">Контакты</h2>
+              <div className="grid md:grid-cols-3 gap-12 mb-18">
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                    <Icon name="Phone" size={28} className="text-primary" />
+                  <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <Icon name="Phone" size={42} className="text-primary" />
                   </div>
-                  <h3 className="font-semibold text-xl mb-2">Телефон</h3>
-                  <a href="tel:+79801421010" className="text-lg hover:text-primary transition-colors">
+                  <h3 className="font-semibold text-3xl mb-3">Телефон</h3>
+                  <a href="tel:+79801421010" className="text-[27px] hover:text-primary transition-colors">
                     +7 (980) 142-10-10
                   </a>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                    <Icon name="Mail" size={28} className="text-primary" />
+                  <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <Icon name="Mail" size={42} className="text-primary" />
                   </div>
-                  <h3 className="font-semibold text-xl mb-2">Email</h3>
-                  <a href="mailto:info@master-kass.ru" className="text-lg hover:text-primary transition-colors">
+                  <h3 className="font-semibold text-3xl mb-3">Email</h3>
+                  <a href="mailto:info@master-kass.ru" className="text-[27px] hover:text-primary transition-colors">
                     info@master-kass.ru
                   </a>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                    <Icon name="MapPin" size={28} className="text-primary" />
+                  <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <Icon name="MapPin" size={42} className="text-primary" />
                   </div>
-                  <h3 className="font-semibold text-xl mb-2">Адрес</h3>
-                  <p className="text-lg text-[#000000]">г. Подольск
+                  <h3 className="font-semibold text-3xl mb-3">Адрес</h3>
+                  <p className="text-[27px] text-[#000000]">г. Подольск
 ул. Маштакова, д. 12 3 этаж, офис 17</p>
                 </div>
               </div>
