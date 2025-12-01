@@ -145,23 +145,41 @@ export default function Index() {
                 <Icon name="ChevronDown" size={16} />
               </button>
               {showCashRegisterMenu && (
-                <div className="absolute top-full left-0 mt-2 w-72 bg-background border rounded-lg shadow-lg p-4 space-y-3">
-                  <a href="#services" className="block hover:text-primary transition-colors">
-                    <div className="font-semibold">Эвотор 7.3</div>
-                    <div className="text-sm text-muted-foreground">Компактная онлайн-касса</div>
-                  </a>
-                  <a href="#services" className="block hover:text-primary transition-colors">
-                    <div className="font-semibold">АТОЛ 91Ф</div>
-                    <div className="text-sm text-muted-foreground">Надежная фискальная касса</div>
-                  </a>
-                  <a href="#services" className="block hover:text-primary transition-colors">
-                    <div className="font-semibold">МТС Касса 5</div>
-                    <div className="text-sm text-muted-foreground">Умная касса для бизнеса</div>
-                  </a>
-                  <a href="#services" className="block hover:text-primary transition-colors">
-                    <div className="font-semibold">MSPOS-K</div>
-                    <div className="text-sm text-muted-foreground">Мобильная касса</div>
-                  </a>
+                <div className="absolute top-full left-0 mt-2 w-72 bg-background border rounded-lg shadow-lg p-4 space-y-4">
+                  <div>
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ЭВОТОР</div>
+                    <div className="space-y-3">
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">Эвотор 7.3</div>
+                        <div className="text-sm text-muted-foreground">Компактная онлайн-касса</div>
+                      </a>
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">Эвотор 10</div>
+                        <div className="text-sm text-muted-foreground">Профессиональная касса</div>
+                      </a>
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">Эвотор 5i</div>
+                        <div className="text-sm text-muted-foreground">Для малого бизнеса</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="border-t pt-3">
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ДРУГИЕ БРЕНДЫ</div>
+                    <div className="space-y-3">
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">АТОЛ 91Ф</div>
+                        <div className="text-sm text-muted-foreground">Надежная фискальная касса</div>
+                      </a>
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">МТС Касса 5</div>
+                        <div className="text-sm text-muted-foreground">Умная касса для бизнеса</div>
+                      </a>
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">MSPOS-K</div>
+                        <div className="text-sm text-muted-foreground">Мобильная касса</div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
