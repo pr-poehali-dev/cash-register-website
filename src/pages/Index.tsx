@@ -181,6 +181,23 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="border-t pt-3">
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">МЕРКУРИЙ</div>
+                    <div className="space-y-3">
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">Меркурий 185Ф</div>
+                        <div className="text-sm text-muted-foreground">Универсальная модель</div>
+                      </a>
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">Меркурий 115Ф</div>
+                        <div className="text-sm text-muted-foreground">Для небольших магазинов</div>
+                      </a>
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">Меркурий 180Ф</div>
+                        <div className="text-sm text-muted-foreground">С принтером чеков</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="border-t pt-3">
                     <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ДРУГИЕ БРЕНДЫ</div>
                     <div className="space-y-3">
                       <a href="#services" className="block hover:text-primary transition-colors">
