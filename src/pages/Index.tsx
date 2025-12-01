@@ -164,12 +164,25 @@ export default function Index() {
                     </div>
                   </div>
                   <div className="border-t pt-3">
-                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ДРУГИЕ БРЕНДЫ</div>
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">АТОЛ</div>
                     <div className="space-y-3">
                       <a href="#services" className="block hover:text-primary transition-colors">
                         <div className="font-semibold">АТОЛ 91Ф</div>
                         <div className="text-sm text-muted-foreground">Надежная фискальная касса</div>
                       </a>
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">АТОЛ 30Ф</div>
+                        <div className="text-sm text-muted-foreground">Компактная модель</div>
+                      </a>
+                      <a href="#services" className="block hover:text-primary transition-colors">
+                        <div className="font-semibold">АТОЛ 42ФС</div>
+                        <div className="text-sm text-muted-foreground">Для автоматизации торговли</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div className="border-t pt-3">
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ДРУГИЕ БРЕНДЫ</div>
+                    <div className="space-y-3">
                       <a href="#services" className="block hover:text-primary transition-colors">
                         <div className="font-semibold">МТС Касса 5</div>
                         <div className="text-sm text-muted-foreground">Умная касса для бизнеса</div>
