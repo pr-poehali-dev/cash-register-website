@@ -53,9 +53,17 @@ export default function Index() {
                     <Icon name="Phone" size={42} className="text-primary" />
                   </div>
                   <h3 className="font-semibold text-3xl mb-3">Телефон</h3>
-                  <a href="tel:+79801421010" className="text-[27px] hover:text-primary transition-colors">+7 (980) 142-10-10 
-+7 (916) 412-09-20
- +7 (916) 412-09-40</a>
+                  <div className="flex flex-col gap-2">
+                    <a href="tel:+79801421010" className="text-[27px] hover:text-primary transition-colors">
+                      +7 (980) 142-10-10
+                    </a>
+                    <a href="tel:+79164120920" className="text-[27px] hover:text-primary transition-colors">
+                      +7 (916) 412-09-20
+                    </a>
+                    <a href="tel:+79164120940" className="text-[27px] hover:text-primary transition-colors">
+                      +7 (916) 412-09-40
+                    </a>
+                  </div>
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mb-6">
