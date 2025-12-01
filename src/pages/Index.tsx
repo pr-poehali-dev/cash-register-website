@@ -10,6 +10,7 @@ import Icon from '@/components/ui/icon';
 export default function Index() {
   const { toast } = useToast();
   const [showServicesMenu, setShowServicesMenu] = useState(false);
+  const [showCashRegisterMenu, setShowCashRegisterMenu] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -112,6 +113,36 @@ export default function Index() {
                   <a href="#services" className="block hover:text-primary transition-colors">
                     <div className="font-semibold">Круглосуточная поддержка</div>
                     <div className="text-sm text-muted-foreground">Техподдержка 24/7</div>
+                  </a>
+                </div>
+              )}
+            </div>
+            <div 
+              className="relative"
+              onMouseEnter={() => setShowCashRegisterMenu(true)}
+              onMouseLeave={() => setShowCashRegisterMenu(false)}
+            >
+              <a href="#services" className="text-foreground hover:text-primary transition-colors flex items-center gap-1">
+                Обслуживаемые кассы
+                <Icon name="ChevronDown" size={16} />
+              </a>
+              {showCashRegisterMenu && (
+                <div className="absolute top-full left-0 mt-2 w-72 bg-background border rounded-lg shadow-lg p-4 space-y-3">
+                  <a href="#services" className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Эвотор 7.3</div>
+                    <div className="text-sm text-muted-foreground">Компактная онлайн-касса</div>
+                  </a>
+                  <a href="#services" className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">АТОЛ 91Ф</div>
+                    <div className="text-sm text-muted-foreground">Надежная фискальная касса</div>
+                  </a>
+                  <a href="#services" className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">МТС Касса 5</div>
+                    <div className="text-sm text-muted-foreground">Умная касса для бизнеса</div>
+                  </a>
+                  <a href="#services" className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">MSPOS-K</div>
+                    <div className="text-sm text-muted-foreground">Мобильная касса</div>
                   </a>
                 </div>
               )}
