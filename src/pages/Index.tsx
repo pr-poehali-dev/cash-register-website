@@ -29,26 +29,16 @@ export default function Index() {
                   Получить консультацию
                 </Button>
               </a>
-              <div className="flex flex-col gap-3">
-                <a href="tel:+79801421010" className="w-full sm:w-auto">
-                  <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-6 w-full whitespace-nowrap">
-                    <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
-                    <span className="truncate">+7 (980) 142-10-10</span>
-                  </Button>
-                </a>
-                <a href="tel:+79164120920" className="w-full sm:w-auto">
-                  <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-6 w-full whitespace-nowrap">
-                    <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
-                    <span className="truncate">+7 (916) 412-09-20</span>
-                  </Button>
-                </a>
-                <a href="tel:+79164120940" className="w-full sm:w-auto">
-                  <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-6 w-full whitespace-nowrap">
-                    <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
-                    <span className="truncate">+7 (916) 412-09-40</span>
-                  </Button>
-                </a>
-              </div>
+              <a href="tel:+79801421010" className="w-full sm:w-auto">
+                <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-7 w-full">
+                  <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
+                  <div className="flex flex-col text-left leading-tight">
+                    <span>+7 (980) 142-10-10</span>
+                    <span>+7 (916) 412-09-20</span>
+                    <span>+7 (916) 412-09-40</span>
+                  </div>
+                </Button>
+              </a>
             </div>
           </div>
         </section>
