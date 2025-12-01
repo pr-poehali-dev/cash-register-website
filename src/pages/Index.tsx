@@ -22,19 +22,33 @@ export default function Index() {
               Продажа, настройка и обслуживание ККТ для вашего бизнеса. 
               Работаем с 2015 года. Более 5000 довольных клиентов.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="#request">
                 <Button size="lg" className="text-lg px-8 py-7">
                   <Icon name="MessageSquare" className="mr-2" size={24} />
                   Получить консультацию
                 </Button>
               </a>
-              <a href="tel:+79801421010" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-7 w-full whitespace-nowrap">
-                  <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
-                  <span className="truncate">+7 (980) 142-10-10</span>
-                </Button>
-              </a>
+              <div className="flex flex-col gap-3">
+                <a href="tel:+79801421010" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-6 w-full whitespace-nowrap">
+                    <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
+                    <span className="truncate">+7 (980) 142-10-10</span>
+                  </Button>
+                </a>
+                <a href="tel:+79164120920" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-6 w-full whitespace-nowrap">
+                    <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
+                    <span className="truncate">+7 (916) 412-09-20</span>
+                  </Button>
+                </a>
+                <a href="tel:+79164120940" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-6 w-full whitespace-nowrap">
+                    <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
+                    <span className="truncate">+7 (916) 412-09-40</span>
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </section>
