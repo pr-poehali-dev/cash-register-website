@@ -18,7 +18,7 @@ export default function Index() {
             <h2 className="font-heading font-bold text-5xl md:text-8xl mb-6 leading-tight">
               Ваш надежный партнер<br />в мире кассовой техники
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-[#000000]">
               Продажа, настройка и обслуживание ККТ для вашего бизнеса. 
               Работаем с 2015 года. Более 5000 довольных клиентов.
             </p>
