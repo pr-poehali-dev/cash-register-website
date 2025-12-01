@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -11,12 +11,28 @@ export default function Index() {
   const { toast } = useToast();
   const [showServicesMenu, setShowServicesMenu] = useState(false);
   const [showCashRegisterMenu, setShowCashRegisterMenu] = useState(false);
+  const servicesMenuRef = useRef<HTMLDivElement>(null);
+  const cashRegisterMenuRef = useRef<HTMLDivElement>(null);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
     message: ''
   });
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (servicesMenuRef.current && !servicesMenuRef.current.contains(event.target as Node)) {
+        setShowServicesMenu(false);
+      }
+      if (cashRegisterMenuRef.current && !cashRegisterMenuRef.current.contains(event.target as Node)) {
+        setShowCashRegisterMenu(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -88,14 +104,15 @@ export default function Index() {
           </h1>
           <nav className="hidden md:flex gap-6 items-center">
             <div 
+              ref={servicesMenuRef}
               className="relative"
-              onMouseEnter={() => setShowServicesMenu(true)}
-              onMouseLeave={() => setShowServicesMenu(false)}
             >
-              <a href="#services" className="text-foreground hover:text-primary transition-colors flex items-center gap-1">
+              <button
+                onClick={() => setShowServicesMenu(!showServicesMenu)}
+                className="text-foreground hover:text-primary transition-colors flex items-center gap-1 bg-transparent border-none cursor-pointer">
                 Услуги
                 <Icon name="ChevronDown" size={16} />
-              </a>
+              </button>
               {showServicesMenu && (
                 <div className="absolute top-full left-0 mt-2 w-72 bg-background border rounded-lg shadow-lg p-4 space-y-3">
                   <a href="#services" className="block hover:text-primary transition-colors">
@@ -118,14 +135,15 @@ export default function Index() {
               )}
             </div>
             <div 
+              ref={cashRegisterMenuRef}
               className="relative"
-              onMouseEnter={() => setShowCashRegisterMenu(true)}
-              onMouseLeave={() => setShowCashRegisterMenu(false)}
             >
-              <a href="#services" className="text-foreground hover:text-primary transition-colors flex items-center gap-1">
+              <button
+                onClick={() => setShowCashRegisterMenu(!showCashRegisterMenu)}
+                className="text-foreground hover:text-primary transition-colors flex items-center gap-1 bg-transparent border-none cursor-pointer">
                 Обслуживаемые кассы
                 <Icon name="ChevronDown" size={16} />
-              </a>
+              </button>
               {showCashRegisterMenu && (
                 <div className="absolute top-full left-0 mt-2 w-72 bg-background border rounded-lg shadow-lg p-4 space-y-3">
                   <a href="#services" className="block hover:text-primary transition-colors">
