@@ -83,9 +83,7 @@ export default function Index() {
 
       <footer className="relative z-10 border-t bg-card/80 backdrop-blur py-8">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground">
-            © 2024 Мастер-Касс. Все права защищены.
-          </p>
+          <p className="text-muted-foreground">© 2025 Мастер-Касс. Все права защищены.</p>
         </div>
       </footer>
     </div>
