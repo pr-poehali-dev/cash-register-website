@@ -71,7 +71,7 @@ export default function Index() {
                     <Icon name="MapPin" size={28} className="text-primary" />
                   </div>
                   <h3 className="font-semibold text-xl mb-2">Адрес</h3>
-                  <p className="text-lg text-muted-foreground">г. Подольск
+                  <p className="text-lg text-[#000000]">г. Подольск
 ул. Маштакова, д. 12 3 этаж, офис 17</p>
                 </div>
               </div>
