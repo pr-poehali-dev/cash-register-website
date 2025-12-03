@@ -20,7 +20,7 @@ export default function Index() {
             </h2>
             <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-[#000000]">
               Продажа, настройка и обслуживание ККТ для вашего бизнеса. 
-              Работаем с 2015 года. Более 5000 довольных клиентов.
+              Работаем с 2018 года. Более 5000 довольных клиентов.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="#request">
