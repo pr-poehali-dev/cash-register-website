@@ -74,7 +74,7 @@ export default function Header() {
             {showCashRegisterMenu && (
               <div className="absolute top-full left-0 mt-2 w-72 bg-background border rounded-lg shadow-lg p-4 space-y-4">
                 <div>
-                  <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ЭВОТОР</div>
+                  <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ЭВОТОР и другие онлайн кассы</div>
                   <div className="space-y-3">
                     <a href="#services" className="block hover:text-primary transition-colors">
                       <div className="font-semibold">Эвотор 7.3</div>
