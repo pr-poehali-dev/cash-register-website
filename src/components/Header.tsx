@@ -108,7 +108,7 @@ export default function Header() {
                   </div>
                 </div>
                 <div className="border-t pt-3">
-                  <div className="text-xs font-bold text-muted-foreground uppercase mb-2">МЕРКУРИЙ</div>
+                  <div className="text-xs font-bold text-muted-foreground uppercase mb-2">МЕРКУРИЙ и другие онлайн кассы</div>
                   <div className="space-y-3">
                     <a href="#services" className="block hover:text-primary transition-colors">
                       <div className="font-semibold">Меркурий 185Ф</div>
