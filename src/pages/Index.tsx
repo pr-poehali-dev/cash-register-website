@@ -93,7 +93,7 @@ export default function Index() {
               
               <div className="mt-16 rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/20">
                 <iframe 
-                  src="https://yandex.ru/map-widget/v1/?ll=37.546903%2C55.424903&z=17&l=map&pt=37.546903,55.424903,pm2rdm"
+                  src="https://yandex.ru/map-widget/v1/?ll=37.524148%2C55.432071&z=17&l=map&pt=37.524148,55.432071,pm2rdm"
                   width="100%" 
                   height="450"
                   frameBorder="0"
