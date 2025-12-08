@@ -93,13 +93,13 @@ export default function Index() {
               
               <div className="mt-16 rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/20">
                 <iframe 
-                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f8c5e8d8f8c5e8d8f8c5e8d8f8c5e8d&amp;source=constructor&amp;ll=37.546903%2C55.424903&amp;z=16&amp;pt=37.546903,55.424903,pm2rdm"
+                  src="https://yandex.ru/map-widget/v1/?ll=37.546903%2C55.424903&z=17&l=map&pt=37.546903,55.424903,pm2rdm"
                   width="100%" 
                   height="450"
                   frameBorder="0"
                   allowFullScreen
                   className="w-full"
-                  title="Карта офиса Мастер-Касс"
+                  title="Карта офиса Мастер-Касс - Подольск, ул. Маштакова, д. 12"
                 />
               </div>
             </div>
