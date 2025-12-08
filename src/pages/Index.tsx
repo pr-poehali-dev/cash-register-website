@@ -102,6 +102,17 @@ export default function Index() {
                   title="Карта офиса Мастер-Касс - Подольск, ул. Маштакова, д. 12"
                 />
               </div>
+              
+              <div className="mt-8 flex justify-center">
+                <Button 
+                  onClick={() => window.open('https://yandex.ru/maps/?rtext=~55.432071,37.524148', '_blank')}
+                  size="lg"
+                  className="text-xl px-8 py-6 flex items-center gap-3"
+                >
+                  <Icon name="Navigation" size={24} />
+                  Построить маршрут
+                </Button>
+              </div>
             </div>
           </div>
         </section>
