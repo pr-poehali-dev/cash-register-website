@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import ServicesSection from '@/components/ServicesSection';
 import RequestForm from '@/components/RequestForm';
 import FAQSection from '@/components/FAQSection';
+import VisitorCounter from '@/components/VisitorCounter';
 
 export default function Index() {
   return (
@@ -93,8 +94,11 @@ export default function Index() {
       </main>
 
       <footer className="relative z-10 border-t bg-card/80 backdrop-blur py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground">© 2025 Мастер-Касс. Все права защищены.</p>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-muted-foreground">© 2025 Мастер-Касс. Все права защищены.</p>
+            <VisitorCounter />
+          </div>
         </div>
       </footer>
     </div>

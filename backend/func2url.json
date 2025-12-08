@@ -1,3 +1,5 @@
 {
+  "get-stats": "https://functions.poehali.dev/95e7c549-3214-4cab-90fb-7afb32e71f38",
+  "track-visit": "https://functions.poehali.dev/c9566f4e-f463-49b7-9a31-e1d6625f6f9c",
   "send-email": "https://functions.poehali.dev/9d2810b4-1b51-46aa-a059-8c1f22bf74a8"
 }
