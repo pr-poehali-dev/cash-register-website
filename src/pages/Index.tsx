@@ -77,9 +77,7 @@ export default function Index() {
                     <Icon name="Mail" size={42} className="text-primary" />
                   </div>
                   <h3 className="font-semibold text-3xl mb-3">Email</h3>
-                  <a href="mailto:info@master-kass.ru" className="text-[27px] hover:text-primary transition-colors">
-                    info@master-kass.ru
-                  </a>
+                  <a href="mailto:info@master-kass.ru" className="text-[27px] hover:text-primary transition-colors">Master-kass@list.ru</a>
                 </div>
                 <div className="flex flex-col items-center">
                   <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mb-6">
