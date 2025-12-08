@@ -14,14 +14,41 @@ export default function RequestForm() {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Заявка отправлена!",
-      description: "Наш специалист свяжется с вами в ближайшее время.",
-    });
-    setFormData({ name: '', phone: '', email: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://functions.poehali.dev/9d2810b4-1b51-46aa-a059-8c1f22bf74a8', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        toast({
+          title: "Заявка отправлена!",
+          description: "Наш специалист свяжется с вами в ближайшее время.",
+        });
+        setFormData({ name: '', phone: '', email: '', message: '' });
+      } else {
+        throw new Error('Ошибка отправки');
+      }
+    } catch (error) {
+      toast({
+        title: "Ошибка отправки",
+        description: "Попробуйте позвонить нам напрямую или повторите попытку позже.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -73,9 +100,9 @@ export default function RequestForm() {
                   className="min-h-32 text-lg"
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full text-lg h-14">
+              <Button type="submit" size="lg" className="w-full text-lg h-14" disabled={isSubmitting}>
                 <Icon name="Send" className="mr-2" size={20} />
-                Отправить заявку
+                {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
               </Button>
             </form>
           </CardContent>
