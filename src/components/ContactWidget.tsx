@@ -19,6 +19,19 @@ const ContactWidget = () => {
             </button>
           </div>
           <div className="space-y-2">
+            <button
+              onClick={() => {
+                if (window.MaxWidget) {
+                  window.MaxWidget.open();
+                }
+              }}
+              className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors w-full"
+            >
+              <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                <Icon name="Headphones" size={20} className="text-white" />
+              </div>
+              <span className="font-medium">Онлайн-чат Max</span>
+            </button>
             <a
               href="https://wa.me/79801421010"
               target="_blank"
