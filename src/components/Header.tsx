@@ -144,12 +144,20 @@ export default function Header() {
           <a href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
           <a href="#contacts" className="text-foreground hover:text-primary transition-colors">Контакты</a>
         </nav>
-        <a href="tel:+79801421010">
-          <Button className="hidden md:flex text-lg px-6 py-6" size="lg">
-            <Icon name="Phone" size={24} className="mr-3" />
-            +7 (980) 142-10-10
-          </Button>
-        </a>
+        <div className="hidden md:flex gap-3 items-center">
+          <a href="#request">
+            <Button variant="outline" size="lg" className="text-lg px-6 py-6">
+              <Icon name="Mail" size={20} className="mr-2" />
+              Написать нам
+            </Button>
+          </a>
+          <a href="tel:+79801421010">
+            <Button className="text-lg px-6 py-6" size="lg">
+              <Icon name="Phone" size={24} className="mr-3" />
+              +7 (980) 142-10-10
+            </Button>
+          </a>
+        </div>
       </div>
     </header>
   );
