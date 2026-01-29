@@ -13,14 +13,17 @@ const queryClient = new QueryClient();
 const App = () => {
   useEffect(() => {
     const trackVisit = async () => {
-      const visited = sessionStorage.getItem('visited');
-      if (!visited) {
+      const lastVisit = localStorage.getItem('lastVisit');
+      const now = Date.now();
+      const oneDayInMs = 24 * 60 * 60 * 1000;
+      
+      if (!lastVisit || (now - parseInt(lastVisit)) > oneDayInMs) {
         try {
           await fetch('https://functions.poehali.dev/c9566f4e-f463-49b7-9a31-e1d6625f6f9c', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' }
           });
-          sessionStorage.setItem('visited', 'true');
+          localStorage.setItem('lastVisit', now.toString());
         } catch (error) {
           console.error('Failed to track visit:', error);
         }
