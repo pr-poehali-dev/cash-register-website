@@ -28,6 +28,16 @@ const App = () => {
     };
     
     trackVisit();
+
+    // Max widget script
+    const script = document.createElement('script');
+    script.src = 'https://widgets-code.comdi.com/w/6wJMf9yw.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
