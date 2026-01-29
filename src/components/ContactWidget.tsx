@@ -20,15 +20,13 @@ const ContactWidget = () => {
           </div>
           <div className="space-y-2">
             <a
-              href="https://max.mts.ru/contact/79801421010"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="tel:+79801421010"
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors"
             >
               <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
                 <Icon name="Headphones" size={20} className="text-white" />
               </div>
-              <span className="font-medium">Онлайн-чат Max</span>
+              <span className="font-medium">Позвонить через Max</span>
             </a>
             <a
               href="https://wa.me/79801421010"
