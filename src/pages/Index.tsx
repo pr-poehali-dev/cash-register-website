@@ -5,7 +5,7 @@ import ServicesSection from '@/components/ServicesSection';
 import RequestForm from '@/components/RequestForm';
 import FAQSection from '@/components/FAQSection';
 import VisitorCounter from '@/components/VisitorCounter';
-import WhatsAppWidget from '@/components/WhatsAppWidget';
+import ContactWidget from '@/components/ContactWidget';
 
 export default function Index() {
   return (
@@ -13,7 +13,7 @@ export default function Index() {
       <div className="fixed inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/6a367fa8-b448-4057-8ed0-4d2614046ae3.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }} />
       
       <Header />
-      <WhatsAppWidget />
+      <ContactWidget />
 
       <main className="pt-20">
         <section className="py-32 md:py-48 relative z-10">
