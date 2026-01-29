@@ -21,8 +21,11 @@ const ContactWidget = () => {
           <div className="space-y-2">
             <button
               onClick={() => {
-                if (window.MaxWidget) {
-                  window.MaxWidget.open();
+                const maxButton = document.querySelector('[data-max-widget-button]') as HTMLElement;
+                if (maxButton) {
+                  maxButton.click();
+                } else if ((window as any).MaxWidget) {
+                  (window as any).MaxWidget.open();
                 }
               }}
               className="flex items-center gap-3 p-3 rounded-lg hover:bg-accent transition-colors w-full"
