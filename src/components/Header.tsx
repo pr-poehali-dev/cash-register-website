@@ -48,7 +48,15 @@ export default function Header() {
                 </a>
                 <a href="#services" className="block hover:text-primary transition-colors">
                   <div className="font-semibold">Техническое обслуживание</div>
-                  <div className="text-sm text-muted-foreground">Ремонт и обслуживание</div>
+                  <div className="text-sm text-muted-foreground">
+                    Ремонт и обслуживание<br/>
+                    Настройка и регистрация ККТ<br/>
+                    Регулярное техобслуживание<br/>
+                    Замена ФН и перерегистрация ККТ в ФНС и ОФД<br/>
+                    Обновление ПО и прошивок<br/>
+                    Восстановление данных и закрытие смен<br/>
+                    Продажа расходных материалов
+                  </div>
                 </a>
                 <a href="#services" className="block hover:text-primary transition-colors">
                   <div className="font-semibold">Настройка и интеграция</div>
