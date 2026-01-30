@@ -10,7 +10,7 @@ const services = [
   {
     icon: 'Wrench',
     title: 'Техническое обслуживание',
-    description: 'Профессиональный ремонт и обслуживание любых моделей кассовых аппаратов'
+    description: 'Профессиональный ремонт и обслуживание любых моделей кассовых аппаратов\nНастройка и регистрация ККТ\nРегулярное техобслуживание\nЗамена ФН и перерегистрация ККТ в ФНС и ОФД\nОбновление ПО и прошивок\nВосстановление данных и закрытие смен\nПродажа расходных материалов'
   },
   {
     icon: 'Settings',
@@ -44,7 +44,7 @@ export default function ServicesSection() {
                 <CardTitle className="text-2xl">{service.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base">{service.description}</CardDescription>
+                <CardDescription className="text-base whitespace-pre-line">{service.description}</CardDescription>
               </CardContent>
             </Card>
           ))}
