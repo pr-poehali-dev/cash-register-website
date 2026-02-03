@@ -5,6 +5,7 @@ import Icon from '@/components/ui/icon';
 export default function Header() {
   const [showServicesMenu, setShowServicesMenu] = useState(false);
   const [showCashRegisterMenu, setShowCashRegisterMenu] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const servicesMenuRef = useRef<HTMLDivElement>(null);
   const cashRegisterMenuRef = useRef<HTMLDivElement>(null);
 
@@ -155,7 +156,102 @@ export default function Header() {
             +7 (980) 142-10-10
           </Button>
         </a>
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="md:hidden p-2 text-foreground hover:text-primary transition-colors bg-transparent border-none cursor-pointer"
+          aria-label="Меню"
+        >
+          <Icon name={mobileMenuOpen ? "X" : "Menu"} size={28} />
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-background border-t">
+          <nav className="container mx-auto px-4 py-4 space-y-4">
+            <div>
+              <button
+                onClick={() => setShowServicesMenu(!showServicesMenu)}
+                className="w-full text-left font-semibold text-foreground hover:text-primary transition-colors flex items-center justify-between bg-transparent border-none cursor-pointer py-2"
+              >
+                Услуги
+                <Icon name="ChevronDown" size={20} className={showServicesMenu ? "rotate-180 transition-transform" : "transition-transform"} />
+              </button>
+              {showServicesMenu && (
+                <div className="pl-4 mt-2 space-y-3 border-l-2 border-primary/20">
+                  <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Продажа кассовых аппаратов</div>
+                  </a>
+                  <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Техническое обслуживание</div>
+                  </a>
+                  <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Настройка и интеграция</div>
+                  </a>
+                  <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">
+                    <div className="font-semibold">Круглосуточная поддержка</div>
+                  </a>
+                </div>
+              )}
+            </div>
+
+            <div>
+              <button
+                onClick={() => setShowCashRegisterMenu(!showCashRegisterMenu)}
+                className="w-full text-left font-semibold text-foreground hover:text-primary transition-colors flex items-center justify-between bg-transparent border-none cursor-pointer py-2"
+              >
+                Обслуживаемые кассы
+                <Icon name="ChevronDown" size={20} className={showCashRegisterMenu ? "rotate-180 transition-transform" : "transition-transform"} />
+              </button>
+              {showCashRegisterMenu && (
+                <div className="pl-4 mt-2 space-y-3 border-l-2 border-primary/20">
+                  <div>
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ЭВОТОР</div>
+                    <div className="space-y-2">
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">Эвотор 7.3</a>
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">Эвотор 10</a>
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">Эвотор 5i</a>
+                    </div>
+                  </div>
+                  <div className="pt-2">
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">АТОЛ</div>
+                    <div className="space-y-2">
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">АТОЛ 30Ф</a>
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">АТОЛ 42ФС</a>
+                    </div>
+                  </div>
+                  <div className="pt-2">
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">МЕРКУРИЙ</div>
+                    <div className="space-y-2">
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">Меркурий 185Ф</a>
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">Меркурий 115Ф</a>
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">Меркурий 180Ф</a>
+                    </div>
+                  </div>
+                  <div className="pt-2">
+                    <div className="text-xs font-bold text-muted-foreground uppercase mb-2">ДРУГИЕ</div>
+                    <div className="space-y-2">
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">МТС Касса 5</a>
+                      <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block hover:text-primary transition-colors">MSPOS-K</a>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <a href="#request" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-foreground hover:text-primary transition-colors font-semibold">Заявка</a>
+            <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-foreground hover:text-primary transition-colors font-semibold">FAQ</a>
+            <a href="#contacts" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-foreground hover:text-primary transition-colors font-semibold">Контакты</a>
+            
+            <a href="tel:+79801421010" className="block mt-4">
+              <Button className="w-full text-lg py-6" size="lg">
+                <Icon name="Phone" size={24} className="mr-3" />
+                +7 (980) 142-10-10
+              </Button>
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
