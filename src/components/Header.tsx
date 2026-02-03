@@ -101,10 +101,7 @@ export default function Header() {
                 <div className="border-t pt-3">
                   <div className="text-xs font-bold text-muted-foreground uppercase mb-2">АТОЛ и другие онлайн кассы</div>
                   <div className="space-y-3">
-                    <a href="#services" className="block hover:text-primary transition-colors">
-                      <div className="font-semibold">АТОЛ 91Ф</div>
-                      <div className="text-sm text-muted-foreground">Надежная фискальная касса</div>
-                    </a>
+
                     <a href="#services" className="block hover:text-primary transition-colors">
                       <div className="font-semibold">АТОЛ 30Ф</div>
                       <div className="text-sm text-muted-foreground">Компактная модель</div>
