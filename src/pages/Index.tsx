@@ -33,7 +33,7 @@ export default function Index() {
                 </Button>
               </a>
               <a href="tel:+79801421010" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-14 w-full">
+                <Button size="lg" variant="outline" className="text-base sm:text-lg px-4 sm:px-8 py-9 w-full">
                   <Icon name="Phone" className="mr-2 flex-shrink-0" size={24} />
                   <div className="flex flex-col text-left gap-2 font-semibold">
                     <span>+7 (980) 142-10-10</span>
