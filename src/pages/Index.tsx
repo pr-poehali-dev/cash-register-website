@@ -38,7 +38,6 @@ export default function Index() {
                   <div className="flex flex-col text-left gap-2 font-semibold">
                     <span>+7 (980) 142-10-10</span>
                     <span>+7 (916) 412-09-20</span>
-                    <span>+7 (916) 412-09-40</span>
                   </div>
                 </Button>
               </a>
@@ -66,9 +65,6 @@ export default function Index() {
                     </a>
                     <a href="tel:+79164120920" className="text-[27px] hover:text-primary transition-colors">
                       +7 (916) 412-09-20
-                    </a>
-                    <a href="tel:+79164120940" className="text-[27px] hover:text-primary transition-colors">
-                      +7 (916) 412-09-40
                     </a>
                   </div>
                 </div>
