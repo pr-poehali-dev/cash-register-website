@@ -167,7 +167,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-background border-t">
+        <div className="md:hidden bg-background border-t animate-in slide-in-from-top-2 duration-300">
           <nav className="container mx-auto px-4 py-4 space-y-4">
             <div>
               <button
