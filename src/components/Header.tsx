@@ -8,6 +8,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const servicesMenuRef = useRef<HTMLDivElement>(null);
   const cashRegisterMenuRef = useRef<HTMLDivElement>(null);
+  
+  // v2.0.1
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
